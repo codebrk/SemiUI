@@ -1,0 +1,50 @@
+.semi.dialog.wrap {
+	.semi.dialog {
+		z-index: 999;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		@include transform(translate(-50%, -50%));
+		background-color: $color-body;
+		padding: 20px;
+		max-width: 320px;
+		width: 95%;
+		-webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .4)
+		box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .4)
+	
+		.title, .content {
+			margin: 0;
+			position: relative;
+			margin-bottom: 10px;
+		}
+
+		.title {
+			padding-bottom: 10px;
+		}
+
+		.semi.button {
+			background-color: transparent;
+			padding: 5px 10px;
+			cursor: pointer;
+			color: $color-text;
+		
+			&.positive {
+				color: $color-primary;
+			}
+		
+			&.negative {
+				color: $color-secondary;
+			}
+		}
+	}
+
+	.semi.screen {
+		z-index: 998;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, .8);
+	}
+}

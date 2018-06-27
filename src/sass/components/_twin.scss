@@ -1,0 +1,9 @@
+.semi.twin {
+	@include display-flex();
+	-webkit-align-items: center;
+	align-items: center;
+
+	.semi {
+		height: 44px;
+	}
+}

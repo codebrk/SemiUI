@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	outline: none;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	@include font-normal('normal');
+	color: $color-text;
+	font-size: 1rem;
+}

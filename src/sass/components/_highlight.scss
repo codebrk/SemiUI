@@ -1,0 +1,13 @@
+.semi.highlight {
+	position: relative;
+	display: inline-block;
+
+	.semi.overlay {
+		position: absolute;
+		height: 80%;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+	}
+}

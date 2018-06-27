@@ -1,0 +1,27 @@
+.semi.button {
+	background-color: $color-secondary;
+	color: $color-button-text;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	padding: 12px 20px 10px 20px;
+	border: none;
+	@include font-bold('normal');
+	font-weight: bold;
+
+	&.bump {
+		padding-bottom: 7px;
+		border-bottom: 3px solid darken($color-secondary, 10);
+		@include transition(border .2s);
+
+		&:active {
+			padding-bottom: 10px;
+			border-bottom: none;
+			@include transition(border .2s);
+		}
+	}
+
+	&:disabled {
+		opacity: .7;
+		cursor: not-allowed;
+	}
+}

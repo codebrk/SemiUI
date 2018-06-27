@@ -1,0 +1,25 @@
+.semi.tile {
+	img {
+		width: 100%;
+	}
+
+	.material-icons, i {
+		font-size: inherit;
+	}
+
+	&.plain {
+		h1, h2, h3, h4, h5, h5, p {
+			margin: 0 0 10px 0;
+		}
+
+		h1, h2, h3, h4, h5, h5 {
+			text-transform: uppercase;
+		}
+
+		position: relative;
+		background-color: darken($color-primary, 10);
+		padding: 0 20px 20px 20px;
+		padding-top: 15%;
+		color: $color-body;
+	}
+}
